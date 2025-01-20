@@ -335,3 +335,51 @@
 .footer address {
     color: #fff;
 }
+
+@media (max-width:768px) {
+    .footer {
+        padding: 40px 0;
+        background: #333;
+    }
+
+    .footer .customer {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 16px;
+
+
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .footer .customer a {
+        position: relative;
+        color: #fff;
+    }
+
+    .footer .customer li~li a::before {
+        display: none;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -20px;
+        width: 1px;
+        height: 0.5em;
+        background: #fff;
+
+        transform: translate(0, -50%);
+    }
+
+    .footer .customer a.b {
+        font-weight: 700;
+    }
+
+    .footer p {
+        color: #fff;
+        margin-bottom: 16px;
+    }
+
+    .footer address {
+        color: #fff;
+    }
+}
